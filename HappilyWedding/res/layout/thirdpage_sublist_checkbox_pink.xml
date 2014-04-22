@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/realtive_layout_top"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/whitestrip" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/textfrName"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dip"
+            android:layout_weight=".25"
+            android:inputType="textMultiLine"
+            android:text="Medium Text" />
+
+        <TextView
+            android:id="@+id/textfrKm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:layout_weight=".25"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:text="text2" />
+
+        <TextView
+            android:id="@+id/textfrArea"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="17dp"
+            android:layout_toLeftOf="@+id/checkBox1"
+            android:layout_weight=".40"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:text="text3" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="3dp" 
+        android:button="@xml/custom_checkbox"
+       />
+    <!--  android:button="@xml/custom_checkbox"
+    android:background="@android:color/white" -->
+
+    <RatingBar
+        android:id="@+id/setRating"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/checkBox11"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dip"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="2"
+        android:stepSize="0.1" />
+
+    <TextView
+        android:id="@+id/text_listingid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="22dp"
+        android:layout_toLeftOf="@+id/checkBox11"
+        android:text="TextView" />
+
+</RelativeLayout>

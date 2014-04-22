@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/leftt" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/toggleButton13"
+        android:gravity="center"
+        android:layout_alignParentTop="true" 
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageswitch1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dip"
+            android:src="@drawable/ic_launcher" 
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:layout_weight=".37"
+            />
+
+        <TextView
+            android:id="@+id/textswtich1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            
+            android:layout_centerVertical="true"
+            android:inputType="textMultiLine"
+            android:layout_toRightOf="@+id/imageswitch1"
+            android:text="TextView"
+            android:textColor="#ffffff" 
+            android:layout_weight=".63"
+            />
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/toggleButton13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+      
+        android:background="@drawable/btntoggle_selector_pink"
+        android:textColor="@android:color/white"
+        android:textOff="OFF"
+        android:textOn="ON " />
+
+    <TextView
+        android:id="@+id/text_toggleidpink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/linearlayout_image"
+        android:text="TextView" />
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <!--
+         <TextView
+        android:id="@+id/textdatetime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/headregistration"
+        android:gravity="center"
+        android:text="TASK"
+        android:textColor="#ffffff"
+        android:textSize="23sp" />
+    -->
+
+    <ListView
+        android:id="@+id/list1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_below="@+id/relative_layout_top" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/footer" >
+
+        <ProgressBar
+            android:id="@+id/progressStatus"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="6dp"
+            android:maxHeight="28dip"
+            android:minHeight="28dip" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressswitch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <!--
+         <DigitalClock
+        android:id="@+id/digitalClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textdatetime"
+        android:layout_alignBottom="@+id/textdatetime"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/headregistration1"
+        android:gravity="center"
+        android:text="DigitalClock"
+        android:textColor="#ffffff"
+        android:textSize="23sp" />
+    -->
+
+    <LinearLayout
+        android:id="@+id/relative_layout_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/counter"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/tvDays1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="53dip"
+            android:layout_marginTop="13dip"
+            android:layout_weight=".25"
+            android:gravity="center"
+            android:text="D"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvHr1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dip"
+            android:layout_weight=".10"
+            android:gravity="center"
+            android:text="H"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvMin1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dip"
+            android:layout_weight=".20"
+            android:gravity="center"
+            android:text="Min"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvSec"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dip"
+            android:layout_weight=".20"
+            android:gravity="center"
+            android:text="00"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

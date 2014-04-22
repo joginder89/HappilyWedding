@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/texthead1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+        android:background="@drawable/haibck_pink"
+        android:gravity="center"
+        android:text="F4U"
+        android:textColor="#ffffff"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <!--
+    <SearchView
+        android:id="@+id/searchView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/texthead1" >
+    </SearchView>
+    -->
+
+    <!-- <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/listName1"
+        android:layout_below="@+id/texthead1"
+        android:ems="10"
+        android:hint="search_here"/> -->
+        
+        <RelativeLayout
+            android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/listName1"
+        android:layout_below="@+id/texthead1"
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/search_input1" >
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/cancel_search" />
+
+        <Button
+            android:id="@+id/btnLeft"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/icon_search" />
+
+        <EditText
+            android:id="@+id/edSearch"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btnSearch"
+            android:layout_toRightOf="@id/btnLeft"
+            android:background="@null"
+            android:hint="Search"
+            android:imeOptions="actionSearch"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/autoCompleteTextView1"
+        android:background="@drawable/header" />
+
+    
+
+    <ListView
+        android:id="@+id/listName1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true" 
+        >
+    </ListView>
+    </LinearLayout>
+    
+    <ProgressBar
+        android:id="@+id/progresscheck1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
